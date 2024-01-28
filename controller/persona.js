@@ -16,11 +16,10 @@ class Persona {
 }
 
 const persona1 = new Persona("Luiz", "Portilla", 29, 1007191842);
-console.log(persona1.printPersona());
+
 
 function showPersona() {
   let container = document.querySelector(".container-persona");
-  console.log(container);
   container.innerHTML = `<div class="container"> ${persona1.printPersona()} </div>`;
 }
 showPersona();

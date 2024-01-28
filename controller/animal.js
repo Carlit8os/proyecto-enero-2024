@@ -14,11 +14,9 @@ class Animal {
 }
 
 const dog1 = new Animal("luky", "Macho", "siames");
-console.log(dog1.printAnimal());
 
 function showAnimal() {
   let container = document.querySelector(".container-animal");
-  console.log(container);
   container.innerHTML = `<div class="container"> ${dog1.printAnimal()} </div>`;
 }
 showAnimal();
